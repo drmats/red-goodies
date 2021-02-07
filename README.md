@@ -168,7 +168,7 @@ $ npm i red-goodies
 
     // bound actions tree
     const act = bindActionCreatorsTree(
-        action, store.dispatch
+        action, store.dispatch,
     );
     ```
 
