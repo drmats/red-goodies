@@ -1,6 +1,6 @@
 {
     "bugs": {
-        "url": "https://github.com/drmats/js-toolbox/issues"
+        "url": "https://github.com/drmats/red-box/issues"
     },
     "contributors": [
         {
@@ -10,9 +10,10 @@
         }
     ],
     "dependencies": {
-        "@babel/runtime-corejs3": "^7.12.5"
+        "@babel/runtime-corejs3": "^7.12.5",
+        "@xcmats/js-toolbox": "^0.11.1"
     },
-    "description": "Useful JS utilities.",
+    "description": "Statically typed goodies for redux.",
     "devDependencies": {
         "@babel/cli": "^7.12.10",
         "@babel/core": "^7.12.10",
@@ -42,32 +43,27 @@
     "files": [
         "dist"
     ],
-    "homepage": "https://drmats.github.io/js-toolbox/",
+    "homepage": "https://drmats.github.io/red-box/",
     "keywords": [
-        "array",
-        "async",
-        "codec",
-        "func",
-        "math",
-        "string",
-        "struct",
-        "type",
-        "utils",
+        "actions",
         "es6",
         "javascript",
+        "reducers",
+        "redux",
+        "static",
         "typescript"
     ],
     "license": "Apache-2.0",
     "main": "dist/index.js",
     "module": "dist/es/index.js",
-    "name": "@xcmats/js-toolbox",
+    "name": "red-box",
     "private": true,
     "publishConfig": {
         "access": "public"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drmats/js-toolbox.git"
+        "url": "git+https://github.com/drmats/red-box.git"
     },
     "scripts": {
         "build": "npm run clean:build && npm run build:prepare && npm run build:types && npm run build:commonjs && npm run build:es",
@@ -92,5 +88,5 @@
         "type-check": "tsc --noEmit"
     },
     "typings": "dist/index.d.ts",
-    "version": "0.11.1"
+    "version": "0.0.1"
 }

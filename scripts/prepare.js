@@ -9,11 +9,9 @@ var
     {
         copyFileSync,
         mkdirSync,
-        readdirSync,
         writeFileSync,
     } = require("fs"),
 
-    srcDir = "./src",
     distDir = "./dist",
 
     esConfig = mn => ({
@@ -22,11 +20,6 @@ var
         "typings": "./index.d.ts",
     }),
 
-    tsFiles = dir =>
-        readdirSync(dir, { withFileTypes: true })
-            .filter(de => de.isFile() && de.name.endsWith(".d.ts"))
-            .map(de => de.name),
-
     packageJson = require("../package.json"),
 
     distJson = require("./dist.template.json");
@@ -34,7 +27,7 @@ var
 
 
 
-console.info("Copying type declarations and module configs ...");
+console.info("Copying module configs ...");
 
 
 
@@ -42,14 +35,11 @@ console.info("Copying type declarations and module configs ...");
 // copy src type files and es configs to dist directory
 require("./module_names")
     .forEach(mn => {
-        let src = `${srcDir}/${mn}`, dst = `${distDir}/${mn}`;
+        let dst = `${distDir}/${mn}`;
         mkdirSync(dst, { recursive: true });
-        tsFiles(`${src}/`).forEach(f => {
-            copyFileSync(`${src}/${f}`, `${dst}/${f}`);
-        });
         writeFileSync(
             `${dst}/package.json`,
-            JSON.stringify(esConfig(mn))
+            JSON.stringify(esConfig(mn)),
         );
     });
 
@@ -67,8 +57,8 @@ writeFileSync(
     JSON.stringify(
         Object.entries(distJson)
             .sort(([a, _1], [b, _2]) => a.localeCompare(b))
-            .reduce((acc, [k, v]) => ({ ...acc, [k]: v }), {})
-    )
+            .reduce((acc, [k, v]) => ({ ...acc, [k]: v }), {}),
+    ),
 );
 
 

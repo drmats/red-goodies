@@ -14,7 +14,11 @@
 import type {
     Fun,
     SafeKey,
-} from "../type/defs";
+} from "@xcmats/js-toolbox/type";
+import {
+    choose,
+    identity,
+} from "@xcmats/js-toolbox/func";
 import type {
     Action,
     ActionCreator,
@@ -25,8 +29,6 @@ import type {
     ReduxCompatAnyAction,
 } from "./action";
 import { isWithPayload } from "./action";
-import { choose } from "../func/choice";
-import { identity } from "../func/tools";
 
 
 

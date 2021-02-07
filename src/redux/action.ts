@@ -13,15 +13,13 @@
 
 import type {
     AllowSubset,
-    NonConstEnum,
-    Override,
-} from "../type/utils";
-import type {
     Arr,
     Fun,
+    NonConstEnum,
+    Override,
     SafeKey,
-} from "../type/defs";
-import { objectMap } from "../struct/object";
+} from "@xcmats/js-toolbox/type";
+import { objectMap } from "@xcmats/js-toolbox/struct";
 
 
 
