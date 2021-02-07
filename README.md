@@ -1,14 +1,14 @@
-# red-box
+# red-goodies
 
 Statically typed goodies for **[redux](https://redux.js.org/)**.
 
-[![npm version](https://img.shields.io/npm/v/red-box.svg)](https://www.npmjs.com/package/red-box)
-[![GitHub code size](https://img.shields.io/github/languages/code-size/drmats/red-box.svg)](https://github.com/drmats/red-box)
-[![GitHub tag](https://img.shields.io/github/tag/drmats/red-box.svg)](https://github.com/drmats/red-box)
-[![npm license](https://img.shields.io/npm/l/red-box.svg)](https://www.npmjs.com/package/red-box)
+[![npm version](https://img.shields.io/npm/v/red-goodies.svg)](https://www.npmjs.com/package/red-goodies)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/drmats/red-goodies.svg)](https://github.com/drmats/red-goodies)
+[![GitHub tag](https://img.shields.io/github/tag/drmats/red-goodies.svg)](https://github.com/drmats/red-goodies)
+[![npm license](https://img.shields.io/npm/l/red-goodies.svg)](https://www.npmjs.com/package/red-goodies)
 
 ```bash
-$ npm i red-box
+$ npm i red-goodies
 ```
 
 <br />
@@ -18,7 +18,7 @@ $ npm i red-box
 
 ## documentation
 
-> [API Reference](https://drmats.github.io/red-box/)
+> [API Reference](https://drmats.github.io/red-goodies/)
 
 <br />
 
@@ -55,7 +55,7 @@ redux
 
 ## notes
 
-Go ahead and [file an issue](https://github.com/drmats/red-box/issues/new)
+Go ahead and [file an issue](https://github.com/drmats/red-goodies/issues/new)
 if you found a bug 🐞.
 
 </br>
@@ -77,8 +77,8 @@ You can support this project via [stellar][stellar] network:
 
 ## license
 
-**red-box** is released under the Apache License, Version 2.0. See the
-[LICENSE](https://github.com/drmats/red-box/blob/master/LICENSE)
+**red-goodies** is released under the Apache License, Version 2.0. See the
+[LICENSE](https://github.com/drmats/red-goodies/blob/master/LICENSE)
 for more details.
 
 

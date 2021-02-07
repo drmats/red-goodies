@@ -1,6 +1,6 @@
 {
     "bugs": {
-        "url": "https://github.com/drmats/red-box/issues"
+        "url": "https://github.com/drmats/red-goodies/issues"
     },
     "contributors": [
         {
@@ -43,7 +43,7 @@
     "files": [
         "dist"
     ],
-    "homepage": "https://drmats.github.io/red-box/",
+    "homepage": "https://drmats.github.io/red-goodies/",
     "keywords": [
         "actions",
         "es6",
@@ -56,14 +56,14 @@
     "license": "Apache-2.0",
     "main": "dist/index.js",
     "module": "dist/es/index.js",
-    "name": "red-box",
+    "name": "red-goodies",
     "private": true,
     "publishConfig": {
         "access": "public"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drmats/red-box.git"
+        "url": "git+https://github.com/drmats/red-goodies.git"
     },
     "scripts": {
         "build": "npm run clean:build && npm run build:prepare && npm run build:types && npm run build:commonjs && npm run build:es",
